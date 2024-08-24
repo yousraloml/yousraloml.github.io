@@ -1,0 +1,135 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the Body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Container for the Content */
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Title Styling */
+.title {
+    font-size: 36px;
+    color: #fff; /* White text color */
+    margin-bottom: 30px; /* Space below the title */
+    font-family: 'Georgia', serif;
+    position: relative; /* Needed for positioning the underline */
+    display: inline-block; /* Allow width to be based on text content */
+}
+
+/* Styled Underline */
+
+
+/* Layout for the Photos */
+.photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for the grid */
+    justify-content: center; /* Center the grid */
+    gap: 10px; /* Spacing between the images */
+    margin-bottom: 30px; /* Space below the images */
+}
+
+/* Ensuring All Images Have the Same Size */
+.photos img {
+    width: 100%;
+    height: 500px; /* Fixed height to make the images taller */
+    object-fit: cover; /* Crops images evenly */
+    border-radius: 8px; /* Optional rounded corners */
+}
+
+/* Paragraph Styling */
+.paragraph p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #fff; /* White text color */
+    font-weight: bold; /* Makes the paragraph bold */
+    margin-top: 30px; /* Space above the paragraph */
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+/* Fade-in Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Swiper Container */
+.swiper-container {
+    width: 90%;
+    max-width: 600px;
+    height: 400px; /* Height of the swiper container */
+    margin: 0 auto; /* Center the swiper */
+    border-radius: 0; /* Remove rounded corners */
+    overflow: hidden; /* Clip content within container */
+    position: relative; /* Needed for positioning arrows */
+}
+
+/* Swiper Slide */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* Remove background color */
+}
+
+/* Image Styling */
+.swiper-slide img {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: contain; /* Show the entire image without cropping */
+}
+
+/* Navigation Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff; /* White arrows */
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly darker background for arrows */
+    padding: 10px; /* Padding for better click area */
+    border-radius: 50%; /* Rounded buttons */
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for centering */
+    width: 30px; /* Smaller width for the buttons */
+    height: 30px; /* Smaller height for the buttons */
+}
+
+/* Right Arrow */
+.swiper-button-next {
+    right: 5px; /* Closer to the right edge */
+}
+
+/* Left Arrow */
+.swiper-button-prev {
+    left: 5px; /* Closer to the left edge */
+}
+
+/* Hide Pagination Dots */
+.swiper-pagination {
+    display: none; /* Hide pagination bubbles */
+}

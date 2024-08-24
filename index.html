@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Time!</title>
+  <link rel="stylesheet" href="click.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">If You're Really Yousra🤔 Answer these questions to proceed!</h1>
+
+    <!-- Form for questions -->
+    <form id="quizForm">
+      <div class="question">
+        <label for="q1">1. What is my favorite number?</label>
+        <input type="text" id="q1" name="q1" required>
+      </div>
+
+      <div class="question">
+        <label for="q2">2. wach knt mbw9 nhar tla9ina? (ah/la)</label>
+        <input type="text" id="q2" name="q2" required>
+      </div>
+
+      <div class="question">
+        <label for="q3">3. how was our first kiss? (good/bad)</label>
+        <input type="text" id="q3" name="q3" required>
+      </div>
+
+      <button type="submit">Submit Answers</button>
+    </form>
+
+    <!-- Hidden button to go to the photos page -->
+    <div id="successMessage" style="display: none;">
+      <p>Congratulationsssss yousraaaa kulchi s7i7 hshshshs proud of u as always</p>
+      <button id="toPhotosBtn">Go to The Real Website</button>
+    </div>
+  </div>
+
+  <script src="click.js"></script>
+</body>
+</html>

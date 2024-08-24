@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surprise Website for Her</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Swiper.js CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+
+  <div class="container">
+    <!-- Title -->
+    <h1 class="title fade-in">A7 LOML YOUSRA <br><br><br></h1>
+
+    <!-- Swiper Photo gallery -->
+    <div class="swiper-container fade-in">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="y.jpeg" alt="Her Photo 1">
+        </div>
+        <div class="swiper-slide">
+          <img src="o.jpeg" alt="Her Photo 2">
+        </div>
+        <div class="swiper-slide">
+          <img src="u.jpeg" alt="Her Photo 3">
+        </div>
+        <div class="swiper-slide">
+          <img src="s.jpeg" alt="Her Photo 4">
+        </div>
+        <div class="swiper-slide">
+          <img src="r.jpeg" alt="Her Photo 5">
+        </div>
+        <div class="swiper-slide">
+          <img src="a.jpeg" alt="Her Photo 6">
+        </div>
+      </div>
+
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      
+      <!-- Add Navigation Buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Paragraph -->
+    <div class="paragraph fade-in">
+      <p>
+      <br><br><br>yousra from the moment we first talked something inside me knew there was something special about u little did i know that our conversations would lead us to that magical day in gili where we finally met face to face ill never forget how my heart raced when i saw u for the first time and then that night next to khaoula's house where we shared our first kiss it was like the world melted away and it was just us i love u more than words can ever express and i miss our kisses the ones that make everything else disappear i cant wait to create more memories with u u mean the world to me i love u smsmsmsmsmsmsmsmssmmsmsm
+       
+      </p>
+      <br><br><br><br><br> <small>made with luv ml <3</small>
+    </div>
+  </div>
+
+  <!-- Swiper.js -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Swiper Initialization -->
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      loop: true, // Enables continuous loop mode
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      // Enable swipe functionality
+      grabCursor: true,
+      effect: 'slide',
+    });
+  </script>
+</body>
+</html>
